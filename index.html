@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>iamchristopher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>chris<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'am <span>christopher Gathuthi </span> <br> a web developer <br>
+                    based in Nairobi,Kenya</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- abaout section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/chris-bg.jpg" alt="user-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I  am a passionate web developer, I want to create a solution-based software products that create positive impact in all aspects of our lives,
+                        I am on a mission to create software products that are able to adapt in the rapid changing world of business and I tend to achieve that by creating web applications that are secure and reliable to users
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>python developer</span> <br>python scripts and automation</li>
+                            <li> <span>Django developer</span> <br>designing and developing business logic for web applications using django framework</li>
+                            <li> <span>Git version control</span> <br>github actions for CI/CD </li>
+                            <li> <span>API developer</span> <br>Django Rest framework for developing web APIs</li>
+                            <li> <span>Postgres database</span> <br>Postgres relational database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>Free lancing</span> <br>I have been actively doing freelance work for the past one year.</li>
+                
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2019-2022</span> <br>Jomo Kenyatta University of Agriculture & Technology</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Full-stack web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur nisi, adipisci eaque ducimus temporibus dolorum quae voluptate mollitia illo iusto, ut aperiam non officiis eos quod quo quasi ad?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web site development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur nisi, adipisci eaque ducimus temporibus dolorum quae voluptate mollitia illo iusto, ut aperiam non officiis eos quod quo quasi ad?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>API development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur nisi, adipisci eaque ducimus temporibus dolorum quae voluptate mollitia illo iusto, ut aperiam non officiis eos quod quo quasi ad?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-robot"></i>
+                    <h2>System Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur nisi, adipisci eaque ducimus temporibus dolorum quae voluptate mollitia illo iusto, ut aperiam non officiis eos quod quo quasi ad?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my projects  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My projects.</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Messtech</h3>
+                        <p>A project aiming at developing a web application for students to order food online through the cafeteri</p>
+                        <a href="#"> <i class="fa fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/work-2.png" alt="" >
+                    <div class="layer">
+                        <h3>Jalesa Foundation</h3>
+                        <p>This is a web application for jalesa foundation</p>
+                        <a href="#"> <i class="fa fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Commtrade API Integration</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias obcaecati officia explicabo numquam pariatur ea, eaque velit sint, harum expedita architecto quam veritatis molestiae aliquid ducimus maxime, laudantium magni!</p>
+                        <a href="#"> <i class="fa fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+            
+        </div>
+
+    </div>
+    <!-- contacnt page -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i><a href="mailto:chrisgathuthi@gmail.com">chrisgathuthi@gmail.com </a> </p>
+                <p> <i class="fa fa-phone-square-alt"></i>  +254-776082635</p>
+                <div class="social-icons">
+                    <a href="#"> <i class="fab fa-github-square"></i></a>
+                    <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> </a>
+                </div>
+                <a href="/pdf/CHRISTOPHER GATHUTHI MURIUKI - CV.pdf" download class="btn btn-2">Donload Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" id="Email" placeholder="Youe e-mail" required>
+                    <textarea name="Message" id="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+             
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa fa-heart-pulse"></i>  christopher gathuthi muriuki</p>
+
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+
+    </script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+            
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+            
+        }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwwQocQNbD1C8sg3tBdmSb-YOh-nIauPHVan2lKfR6KGMuaaVDWNbli3XCiEi_v44EWFA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+                msg.innerHTML = ""
+                
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
